@@ -1,11 +1,15 @@
 <script>
 import Header from "./components/Header/Header.vue";
 import ContentSection from "./components/Main/ContentSection/ContentSection.vue";
+import MarketingSection from "./components/Main/MarketingSection/MarketingSection.vue";
+import Footer from "./components/Footer/Footer.vue";
 
 export default {
 	components: {
 		Header,
 		ContentSection,
+		MarketingSection,
+		Footer,
 	},
 };
 </script>
@@ -19,7 +23,11 @@ export default {
 	</header>
 	<main>
 		<ContentSection></ContentSection>
+		<MarketingSection></MarketingSection>
 	</main>
+	<footer>
+		<Footer></Footer>
+	</footer>
 </template>
 
 <style lang="scss">

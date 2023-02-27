@@ -70,9 +70,10 @@ export default {
 
 <style lang="scss" scoped>
 /* CSS */
-@use "../../assets/scss/mixins";
 .header {
 	padding: 15px 0;
-	@include flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 </style>
