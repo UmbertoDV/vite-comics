@@ -1,18 +1,17 @@
 <script>
-import Header from "./components/Header.vue";
-
+// JS
 export default {
-	components: {
-		Header,
+	data() {
+		return {
+			title: "Header",
+		};
 	},
 };
 </script>
 
 <template>
 	<!-- HTML -->
-	<header>
-		<Header></Header>
-	</header>
+	<h1>{{ title }}</h1>
 </template>
 
 <style scoped>
