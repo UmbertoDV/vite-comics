@@ -1,8 +1,9 @@
 <script>
-import Header from "./components/Header/Header.vue";
-import ContentSection from "./components/Main/ContentSection/ContentSection.vue";
-import MarketingSection from "./components/Main/MarketingSection/MarketingSection.vue";
-import Footer from "./components/Footer/Footer.vue";
+import Header from "./components/Header.vue";
+import ContentSection from "./components/ContentSection.vue";
+import MarketingSection from "./components/MarketingSection.vue";
+import Footer from "./components/Footer.vue";
+import Cards from "./components/Cards.vue";
 
 export default {
 	components: {
@@ -10,6 +11,7 @@ export default {
 		ContentSection,
 		MarketingSection,
 		Footer,
+		Cards,
 	},
 };
 </script>
@@ -22,6 +24,7 @@ export default {
 		</div>
 	</header>
 	<main>
+		<Cards></Cards>
 		<ContentSection></ContentSection>
 		<MarketingSection></MarketingSection>
 	</main>
@@ -32,5 +35,5 @@ export default {
 
 <style lang="scss">
 /* CSS */
-@use "./assets/scss/global.scss";
+@use "./assets/scss/global.scss" as *;
 </style>

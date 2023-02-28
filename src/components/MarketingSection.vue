@@ -6,23 +6,23 @@ export default {
 			marketingObj: {
 				digitalComics: {
 					text: "DIGITAL COMICS",
-					img: "./imgs/buy-comics-digital-comics.png",
+					img: "/buy-comics-digital-comics.png",
 				},
 				merchandise: {
 					text: "DC MERCHANDISE",
-					img: "./imgs/buy-comics-merchandise.png",
+					img: "/buy-comics-merchandise.png",
 				},
 				sub: {
 					text: "SUBSCRIPTION",
-					img: "./imgs/buy-comics-shop-locator.png",
+					img: "/buy-comics-shop-locator.png",
 				},
 				comicShop: {
 					text: "COMIC SHOP LOCATION",
-					img: "./imgs/buy-comics-subscriptions.png",
+					img: "/buy-comics-subscriptions.png",
 				},
 				powerVisa: {
 					text: "DC POWER VISA",
-					img: "./imgs/buy-dc-power-visa.svg",
+					img: "/buy-dc-power-visa.svg",
 				},
 			},
 		};
@@ -42,15 +42,14 @@ export default {
 	</div>
 </template>
 
-<style scoped>
-/* CSS */
+<style lang="scss" scoped>
+@use "../assets/scss/partials/mixins" as *;
 .bg {
 	background-color: #0282f9;
 	padding: 20px;
 	width: 100%;
 
-	display: flex;
-	align-items: center;
+	@include flex("vertical");
 }
 .bg img {
 	width: 50px;
@@ -59,8 +58,7 @@ h1 {
 	color: white;
 }
 .card {
-	display: flex;
-	align-items: center;
+	@include flex("vertical");
 	gap: 10px;
 	color: white;
 }

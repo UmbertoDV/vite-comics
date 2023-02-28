@@ -7,14 +7,11 @@
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	ul {
-		list-style: none;
-	}
+}
+
+ul {
+	list-style: none;
 	a {
 		text-decoration: none;
-	}
-	li {
-		display: inline;
-		padding-left: 30px;
 	}
 }

@@ -56,7 +56,7 @@ export default {
 	<!-- HTML -->
 	<div class="header">
 		<div class="logo">
-			<img src="./imgs/dc-logo.png" alt="" />
+			<img src="../assets/imgs/dc-logo.png" alt="" />
 		</div>
 		<nav>
 			<ul>
@@ -69,11 +69,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-/* CSS */
+@use "../assets/scss/partials/mixins" as *;
+
 .header {
 	padding: 15px 0;
-	display: flex;
+	@include flex("vertical");
 	justify-content: space-between;
-	align-items: center;
+}
+li {
+	display: inline-block;
+	a {
+		margin-left: 20px;
+	}
 }
 </style>
